@@ -11,7 +11,7 @@ namespace WebApi.Web.Controllers
     public class WebApiController : ApiController
     {
         [HttpGet]
-        public IHttpActionResult Get()
+        public IHttpActionResult List()
         {
             return Content(HttpStatusCode.OK, new Retorno() { Error = 0,  MsgError = "List", Object = new string[] { "value1", "value2" } }, Configuration.Formatters.JsonFormatter);
         }
